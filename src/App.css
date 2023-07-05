@@ -1,38 +1,95 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Ysabeau+Infant&display=swap');
+
+body {
+  font-family: 'Ysabeau Infant', sans-serif;
+  height: 100vh;
+  background: linear-gradient(to right, #fcb36f, #da95e1, #79dee5);
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.win, .lost {
+  color: rgb(240, 246, 226);
+  font-size: 40px;
+  padding: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.lost {
+  color: rgb(240, 219, 219)
+}
+
+#newGame {
+  margin-top: 40px;
+  background: transparent;
+  border: 3px dotted white;
+  border-radius: 10px;
   color: white;
+  font-size: 30px;
+  padding: 10px 20px;
+  transition: all 0.4s;
 }
 
-.App-link {
-  color: #61dafb;
+#newGame:hover {
+  border: 3px dotted rgba(255,255,255, 0.8);
+  background-color: rgba(255,255,255, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#currentWord span {
+  font-size: 50px;
+  margin: 0 5px;
+  padding: 5px 20px;
+  color: white
+}
+
+#currentWord span.notfinded {
+  color: rgba(255,255,255,0.3)
+}
+
+#currentWord span.lost {
+  color: rgb(237, 85, 85)
+}
+
+.hangman {
+  position: relative;
+}
+
+.hangman img {
+  display: flex;
+  position: absolute;
+  width: 300px;
+  top: -130px;
+  left: 300px;
+}
+
+#keyboard {
+  max-width: 600px;
+  margin-top: 15em;
+  display: inline-block;
+}
+
+#keyboard button{
+  background: #9769ec;
+  color: #d6c0ff;
+  font-size: 30px;
+  border:none;
+  border-radius: 10px;
+  width: 40px;
+  margin:5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#keyboard button:hover{
+  background-color: #d6c0ff;
+  color:#a078ea;
+}
+
+#keyboard button.used{
+  opacity: 0.5;
 }
