@@ -1,14 +1,14 @@
 import React from 'react';
-import img1 from './images/1pendu.svg';
-import img2 from './images/2pendu.svg';
-import img3 from './images/3pendu.svg';
-import img4 from './images/4pendu.svg';
-import img5 from './images/5pendu.svg';
-import img6 from './images/6pendu.svg';
-import img7 from './images/7pendu.svg';
-import img8 from './images/8pendu.svg';
-import img9 from './images/9pendu.svg';
-import img10 from './images/10pendu.svg';
+import img1 from '../images/1pendu.svg';
+import img2 from '../images/2pendu.svg';
+import img3 from '../images/3pendu.svg';
+import img4 from '../images/4pendu.svg';
+import img5 from '../images/5pendu.svg';
+import img6 from '../images/6pendu.svg';
+import img7 from '../images/7pendu.svg';
+import img8 from '../images/8pendu.svg';
+import img9 from '../images/9pendu.svg';
+import img10 from '../images/10pendu.svg';
 
 const Hangman = ({ attempts }) => {
     return (

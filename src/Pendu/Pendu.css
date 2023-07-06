@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Ysabeau+Infant&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#hangmanGame {
+  font-family: 'Ysabeau Infant', sans-serif;
+  height: 100vh;
+  background: linear-gradient(to right, #fcb36f, #da95e1, #79dee5);
+  text-align: center;
+  
+}
+
+#hangmanTitle {
+  font-family: 'Sacramento', cursive;
+  font-size: 6rem;
+  margin:0;
+  padding:6rem;
+}
+
+.win, .lost {
+  color: rgb(240, 246, 226);
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+.lost {
+  color: rgb(240, 219, 219)
+}
+
+#newGame {
+  margin-top: 40px;
+  background: transparent;
+  border: 3px dotted white;
+  border-radius: 10px;
+  color: white;
+  font-size: 30px;
+  padding: 10px 20px;
+  transition: all 0.4s;
+}
+
+#newGame:hover {
+  border: 3px dotted rgba(255,255,255, 0.8);
+  background-color: rgba(255,255,255, 0.1);
+}
+
+#currentWord span {
+  font-size: 50px;
+  margin: 0 5px;
+  padding: 5px 20px;
+  color: white
+}
+
+#currentWord span.notfinded {
+  color: rgba(255,255,255,0.3)
+}
+
+#currentWord span.lost {
+  color: rgb(237, 85, 85)
+}
+
+.hangman {
+  position: relative;
+}
+
+.hangman img {
+  display: flex;
+  position: absolute;
+  width: 300px;
+  top: -130px;
+  left: 300px;
+}
+
+#keyboard {
+  max-width: 600px;
+  margin-top: 15em;
+  display: inline-block;
+}
+
+#keyboard button{
+  background: #9769ec;
+  color: #d6c0ff;
+  font-size: 30px;
+  border:none;
+  border-radius: 10px;
+  width: 40px;
+  margin:5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#keyboard button:hover{
+  background-color: #d6c0ff;
+  color:#a078ea;
+}
+
+#keyboard button.used{
+  opacity: 0.5;
+}

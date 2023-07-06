@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css';
+import './Pendu.css';
 
 const CurrentWord = ({currentWord, usedLetter, win}) => {
     const formattedWord = currentWord.charAt(0).toUpperCase() + currentWord.slice(1);

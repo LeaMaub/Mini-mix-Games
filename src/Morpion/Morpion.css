@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;500&display=swap');
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+#morpionGame {
+    background: linear-gradient(to right, #093028, #237a57);
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+#morpionTitle {
+    margin:0;
+    padding: 5rem;    
+    text-align: center;
+    font-size: 6rem;
+    color: #ffffff;
+}
+
+.status {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+#gameBoard {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.square {
+    font-family: 'Handlee', cursive;
+    background: #237a57;
+    border: 1px solid #ffffff;
+    float: left;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    height: 10rem;
+    width: 10rem;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.square.highlight {
+    background: #46bc8d;
+}
+
+#resetButton {
+    background: transparent;
+    color: #ffffff;
+    margin: 3rem;
+    border: 1px solid white;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#resetButton:hover{
+    background-color: #46bc8d;
+}
