@@ -10,7 +10,7 @@ html, body {
   height: 100vh;
   background: linear-gradient(to right, #fcb36f, #da95e1, #79dee5);
   text-align: center;
-  
+  overflow: hidden;
 }
 
 #hangmanTitle {
@@ -99,4 +99,33 @@ html, body {
 
 #keyboard button.used{
   opacity: 0.5;
+}
+
+@media screen and (max-width: 950px) {
+  #hangmanTitle {
+    font-size: 4rem;
+    padding: 4rem;
+  }
+
+  .hangman img {
+    display: flex;
+    position: absolute;
+    width: 200px;
+    top: -330px;
+    left: 100px;
+  }
+
+  #currentWord {
+    margin-top: 200px;
+  }
+
+  #currentWord span {
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+
+  #keyboard {
+    margin-top: 40px;
+  }
 }

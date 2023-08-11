@@ -15,11 +15,21 @@ html, body {
     color: white;
 }
 
+.App-header h1 {
+    font-size: 50px;
+}
+
+.App-header p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
 .game-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .game-list a {
@@ -28,6 +38,7 @@ html, body {
 
 .game-thumbnail {
     width: 150px;
+    height:300px;
     border: 1px solid #fff;
     border-radius: 10px;
     padding: 10px;

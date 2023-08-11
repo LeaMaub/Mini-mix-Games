@@ -5,6 +5,10 @@ import MiniaturePendu from './images/miniaturePendu.png';
 import Pendu from './Pendu/Pendu';
 import MiniatureMorpion from './images/miniatureMorpion.avif'
 import Morpion from './Morpion/Morpion'
+import CandyCrush from './CandyCrush/CandyCrush';
+import MiniatureCandyCrush from './images/miniatureCandyCrush.avif'
+import Tetris from './Tetris/Tetris'
+import MiniatureTetris from './images/miniatureTetris.jpg'
 
 function App() {
     return (
@@ -13,6 +17,8 @@ function App() {
                 <Route path="/" element={<HomePage />} exact />
                 <Route path="/pendu" element={<Pendu />} />
                 <Route path="/morpion" element={<Morpion />} />
+                <Route path="/candycrush" element={<CandyCrush />} />
+                <Route path="/tetris" element={<Tetris/>}/>
             </Routes>
         </Router>
     );
@@ -23,7 +29,7 @@ function HomePage() {
         <div className="App">
             <header className="App-header">
                 <h1>Bienvenue sur mon site de mini-jeux !</h1>
-                <p>A quel jeu jouons nous aujourd'hui?</p>
+                <p>A quel jeu allons nous jouer aujourd'hui?</p>
                 <div className="game-list">
                     <Link to="/pendu">
                         <div className="game-thumbnail">
@@ -35,6 +41,18 @@ function HomePage() {
                         <div className="game-thumbnail">
                             <img src={MiniatureMorpion} alt="" />
                             <p>Jeu du morpion</p>
+                        </div>
+                    </Link>}
+                    {<Link to="/candycrush">
+                        <div className="game-thumbnail">
+                            <img src={MiniatureCandyCrush} alt="" />
+                            <p>Jeu des bonbons</p>
+                        </div>
+                    </Link>}
+                    {<Link to="/tetris">
+                        <div className="game-thumbnail">
+                            <img src={MiniatureTetris} alt="" />
+                            <p>Tetris</p>
                         </div>
                     </Link>}
                 </div>

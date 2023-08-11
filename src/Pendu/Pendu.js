@@ -10,7 +10,7 @@ class App extends Component {
     'chat', 'chien', 'souris', 'cheval', 'vache', 'poule', 'canard', 'abeille', 'mouton', 'chèvre',
     'lion', 'tigre', 'éléphant', 'papillon', 'serpent', 'ours', 'perroquet', 'pingouin', 'kangourou', 'girafe', 
     'rose', 'marguerite', 'orchidée', 'pissenlit', 'chêne', 'érable', 'cèdre', 'sapin', 'palmier', 'bambou', 
-    'tulipe', 'lavande', 'hortensia', 'jonquille', 'mimosa', 'olivier', 'cyprès', 'pin', 'aubépine', 'myrtille'
+    'tulipe', 'lavande', 'hortensia', 'jonquille', 'mimosa', 'olivier', 'cyprès', 'pin', 'aubépine', 'myrtille',
     ],
     currentWord: null,
     alphabet: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase().split(''),

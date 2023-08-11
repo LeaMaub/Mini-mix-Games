@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%
+}
+
+.tetrisGame {
+    font-family: 'Bruno Ace SC', cursive;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(14, 1, 20);
+    height: 100%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 950px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu h1 {
+        margin: 2rem;
+        font-size: 4rem;
+    }
+
+    .menu button {
+        padding: 20px 40px;
+    }
+
+    .Board {
+        width: 5em;
+    }
+}

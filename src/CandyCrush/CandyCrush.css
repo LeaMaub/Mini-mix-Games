@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Exo+2&display=swap');
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+.candycrushHeader {
+    background: url(../images/backgroundCandyCrush.png);
+    height: 100%;
+}
+
+.titleCandy {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 4rem;
+    color: rgb(255, 199, 246);
+    text-align: center;
+    margin:0;
+    padding: 3rem;
+}
+
+.gameInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px dashed rgb(67, 30, 86);
+    border-radius: 10px;
+    background-color: rgba(137, 91, 180, 0.2);
+    width: 50%;
+    margin:auto;
+}
+
+.gameInfo h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    color: rgb(67, 30, 86);
+    display: flex;
+    align-items: center;
+}
+
+.infoEndGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+.infoEndGame h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 40px;
+    color: rgb(67, 30, 86);
+    display: flex;
+    align-items: center;
+}
+
+.candycrushGame {
+    background: url(../images/backgroundCandyCrush.png);
+    height: 100vh;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameBoard {
+    width: 560px;
+    height: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.gameBoard img {
+    width: 70px;
+    height: 70px;
+}
+
+.newGame {
+    background-color: rgba(137, 91, 180, 0.2);
+    color: rgb(67, 30, 86);
+    margin: 3rem;
+    border: 1px solid rgb(67, 30, 86);
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.newGame:hover {
+    background-color: rgba(137, 91, 180, 0.5);
+}
+
+@media screen and (max-width: 950px) {
+    .titleCandy {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .gameInfo {
+        flex-direction: column;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        width: 350px;
+    }
+
+    .gameInfo h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .candycrushGame {
+        height: 50vh;
+    }
+
+    .gameBoard {
+        width: 380px;
+        height: 380px;
+    }
+
+    .gameBoard img {
+        width: 40px;
+        height: 40px;
+    }
+}
