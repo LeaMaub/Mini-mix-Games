@@ -4,13 +4,13 @@ html, body {
 }
 
 .App {
-    height: 100vh;
     text-align: center;
-    background-color: rgb(38, 62, 96);
 }
 
 .App-header {
-    background-color: #5271ad;
+    height: 100vh;
+    background: #360033;
+    background: linear-gradient(to right, #360033, #0b8793);
     padding: 20px;
     color: white;
 }
@@ -26,6 +26,7 @@ html, body {
 }
 
 .game-list {
+    margin-top: 12rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
