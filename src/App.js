@@ -29,7 +29,7 @@ function HomePage() {
         <div className="App">
             <header className="App-header">
                 <h1>Bienvenue sur mini-mix game !</h1>
-                <p>A quel jeu allons nous jouer aujourd'hui?</p>
+                <p>À quoi jouerons-nous aujourd'hui ? Prêts pour battre de nouveaux records ?</p>
                 <div className="game-list">
                     <Link to="/pendu">
                         <div className="game-thumbnail">

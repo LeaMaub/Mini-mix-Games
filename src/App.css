@@ -4,13 +4,14 @@ html, body {
 }
 
 .App {
+    height: 100vh;
+    background: #360033;
+    background: linear-gradient(to right, #360033, #0b8793);
     text-align: center;
 }
 
 .App-header {
-    height: 100vh;
-    background: #360033;
-    background: linear-gradient(to right, #360033, #0b8793);
+    height: 10%;
     padding: 20px;
     color: white;
 }
@@ -52,4 +53,14 @@ html, body {
 
 .game-thumbnail p {
     color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+    .App {
+        height: 100%;
+    }
+
+    .game-list {
+        margin-top: 2rem;
+    }
 }
